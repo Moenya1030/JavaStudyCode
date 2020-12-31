@@ -1,31 +1,30 @@
 package lab5;
 
-public class Rectangle {
-	private double length;
-	private double width;
-	Rectangle()
+public class Rectangle implements compute{
+	private double a;
+	public void setA(double a)
 	{
-		this.length=0;
-		this.width=0;
+		this.a=a;
 	}
-	public double getWidth()
+	public double getA()
 	{
-		return this.width;
+		return this.a;
 	}
-	public double getLength()
+	private double b;
+	public void setB(double b)
 	{
-		return this.length;
+		this.b=b;
 	}
-	public void setWidth(double width)
+	public double getB()
 	{
-		this.width = width;
-	}
-	public void setLength(double length)
-	{
-		this.length = length;
+		return this.b;
 	}
 	public double getArea()
 	{
-		return this.length*this.width;
+		return this.a*this.b;
+	}
+	public double getPerm()
+	{
+		return (this.a+this.b)*2;
 	}
 }

@@ -1,2 +1,2 @@
-module JavaSE {
+module JavaSEpro {
 }
